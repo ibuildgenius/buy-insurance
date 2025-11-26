@@ -2,9 +2,8 @@ import mycoverai from '@mycoverai/mca-javascript-sdk';
 
 const config = {
   action: 'purchase',
-  productId: [],
-  publicKey: 'YOUR_API_KEY', // ENTER YOUR PUBLIC API KEY
-  paymentOption: 'gateway',
+  pid: [],
+  pk: '', // ENTER YOUR PUBLIC API KEY
   onClose: () => {
     console.log('Do something when the user drops off');
   },
