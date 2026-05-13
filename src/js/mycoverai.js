@@ -2,15 +2,16 @@ import mycoverai from '@mycoverai/mca-javascript-sdk';
 
 const config = {
   action: 'purchase',
-  pid: [],
-  pk: '', // ENTER YOUR PUBLIC API KEY
-  onClose: () => {
-    console.log('Do something when the user drops off');
+  pid: ['<product-id>'], // Replace with your product ID(s)
+  pk: 'MCAPUBK_TEST|..............', // ENTER YOUR PUBLIC API KEY
+  payment_option: 'gateway', // 'gateway' or 'wallet'
+  // reference: 'BUY-<unique-reference-id>', // Required if using wallet payment option
+  onClose: (close_url) => {
+    console.log('SDK closed', close_url);
   },
-  callback: () => {
-    console.log('Do something when the user completes a purchase');
+  callback: (success_url, data) => {
+    console.log('Operation successful', success_url, data);
   },
-  landingUrls: ['https://www.example1.com/', 'https://www.example2.org/'],
 };
 
 export function buyInsurance(buyBtn) {
