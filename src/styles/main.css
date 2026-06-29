@@ -1,9 +1,5 @@
 @import './tailwind.css';
 
-.logo {
-  will-change: filter;
-  transition: filter 300ms;
-}
 .vite:hover {
   filter: drop-shadow(0 0 1em #646cffaa);
 }
