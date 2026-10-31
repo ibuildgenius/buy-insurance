@@ -13,7 +13,7 @@
     "postcss-import": "^16.1.0",
     "prettier": "3.3.3",
     "tailwindcss": "^3.4.10",
-    "vite": "^5.4.1"
+    "vite": "^6.4.5"
   },
   "dependencies": {
     "@mycoverai/mca-javascript-sdk": "^0.9.0"
